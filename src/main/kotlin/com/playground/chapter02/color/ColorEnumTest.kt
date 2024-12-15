@@ -1,9 +1,8 @@
 package com.playground.chapter02.color
 
-import com.playground.chapter02.color.Color.*
-
-fun getWarmth(color: Color) = when(color) {
-    RED, ORANGE, YELLOW -> "warm"
-    GREEN -> "neutral"
-    BLUE, INDIGO, VIOLET -> "cold"
-}
+fun getWarmth(color: Color) =
+    when (color) {
+        Color.RED, Color.ORANGE, Color.YELLOW -> "warm"
+        Color.GREEN -> "neutral"
+        Color.BLUE, Color.INDIGO, Color.VIOLET -> "cold"
+    }

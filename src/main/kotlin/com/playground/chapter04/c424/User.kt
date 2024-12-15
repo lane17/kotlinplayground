@@ -1,11 +1,16 @@
-package com.playground.chapter04.`4_2_4`
+package com.playground.chapter04.c424
 
-class User(val name: String) {
+class User(
+    val name: String,
+) {
     var address: String = "unspecified"
         set(value: String) {
-            println("""
+            println(
+                """
                 Address was changed for $name:
-                "$field" -> "$value".""".trimIndent())
+                "$field" -> "$value".
+                """.trimIndent(),
+            )
             field = value
         }
 }

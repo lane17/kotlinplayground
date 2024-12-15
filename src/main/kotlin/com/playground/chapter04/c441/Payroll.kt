@@ -1,11 +1,10 @@
-package com.playground.chapter04.`4_4_1`
+package com.playground.chapter04.c441
 
 object Payroll {
     val allEmployees = arrayListOf<Person>()
 
     fun calculateSalary() {
         for (person in allEmployees) {
-
         }
     }
 }

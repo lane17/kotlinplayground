@@ -4,7 +4,7 @@ fun <T> joinToString2(
     collection: Collection<T>,
     separator: String = ", ",
     prefix: String = "",
-    postfix: String = ""
+    postfix: String = "",
 ): String {
     val result = StringBuilder(prefix)
 
@@ -20,7 +20,7 @@ fun <T> joinToString2(
 fun <T> Collection<T>.joinToString(
     separator: String = ", ",
     prefix: String = "",
-    postfix: String = ""
+    postfix: String = "",
 ): String {
     val result = StringBuilder(prefix)
 
@@ -36,12 +36,12 @@ fun <T> Collection<T>.joinToString(
 fun Collection<String>.join(
     separator: String = ",",
     prefix: String = "",
-    postfix: String = ""
+    postfix: String = "",
 ) = joinToString(separator, prefix, postfix)
+
 fun main() {
 //    val list = arrayListOf(1,2,3)
 //    println(list.joinToString(separator = ";",
 //        prefix = "(", postfix = ")"))
     println(listOf("one", "two", "eight").join(" "))
 }
-

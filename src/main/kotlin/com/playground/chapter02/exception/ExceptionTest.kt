@@ -7,14 +7,15 @@ fun main() {
 //        throw IllegalArgumentException("A percentage value must be between 0 and 100: $percentage")
 //    }
 
-    //------------------------------
+    // ------------------------------
     val number = 101
 
     val percentage =
-        if (number in 0..100)
+        if (number in 0..100) {
             number
-        else
+        } else {
             throw IllegalArgumentException(
-                "A percentage value must be between 0 and 100: $number"
+                "A percentage value must be between 0 and 100: $number",
             )
+        }
 }
